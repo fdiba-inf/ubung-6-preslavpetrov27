@@ -31,6 +31,7 @@ public class PasswordCheck {
        }
        if (correct == true){
          System.out.println("Password valid!");
+         break;
        }else {
           System.out.println("Password invalid!");
          
