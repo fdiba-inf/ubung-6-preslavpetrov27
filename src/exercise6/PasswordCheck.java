@@ -7,8 +7,9 @@ public class PasswordCheck {
         Scanner input = new Scanner(System.in);
 
         while (true){
-       String password = inputnext.Line();
+       String password = input.nextLine();
        boolean correct = true;
+
        if(password.length()<8){
          correct = false;
 
