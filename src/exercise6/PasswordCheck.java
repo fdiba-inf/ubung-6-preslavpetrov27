@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PasswordCheck {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+      int count = 0;
         while (true){
        String password = input.nextLine();
        boolean correct = true;
@@ -17,15 +17,12 @@ public class PasswordCheck {
        for (int i = 0; i  <password.length();i++){
        if (!Character.isLetterOrDigit(password.charAt(i))){
          correct = false;
-         break;
        }
+       if(Character.isDigit(password.charAt(i))) {
+                count++;
+            }
        
     }
-     int count = 0;
-       for (int i = 0; i  <password.length();i++){
-         if (Character.isDigit(password.charAt(i))){
-           count++;
-         }
        
        if ( count <2){
          correct = false;
