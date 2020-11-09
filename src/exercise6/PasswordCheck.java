@@ -28,7 +28,6 @@ public class PasswordCheck {
          correct = false;
 
        }
-       }
        if (correct){
          System.out.println("Password valid!");
          break;
