@@ -7,7 +7,7 @@ public class PasswordCheck {
         Scanner input = new Scanner(System.in);
 
         while (true){
-       String password = input.next.Line();
+       String password = inputnext.Line();
        boolean correct = true;
        if(password.length()<8){
          correct = false;
@@ -18,18 +18,20 @@ public class PasswordCheck {
          correct = false;
          break;
        }
-        int count = 0;
+       
     }
+     int count = 0;
        for (int i = 0; i  <password.length();i++){
          if (Character.isDigit(password.charAt(i))){
            count++;
          }
-       }
+       
        if ( count <2){
          correct = false;
 
        }
-       if (correct == true){
+       }
+       if (correct){
          System.out.println("Password valid!");
          break;
        }else {
